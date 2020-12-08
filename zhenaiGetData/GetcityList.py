@@ -5,13 +5,13 @@
 from bs4 import BeautifulSoup
 
 from connectMysql import MySQLJDBC
-from zhenaiGetData import Tools
+from zhenaiGetData import toolsMy
 
 url = 'http://www.zhenai.com/zhenghun'
 
 msql = MySQLJDBC.msql
-get_one_page = Tools.get_one_page
-headers = Tools.headers
+get_one_page = toolsMy.get_one_page
+headers = toolsMy.headers
 
 if __name__ == '__main__':
     # 城市列表页面

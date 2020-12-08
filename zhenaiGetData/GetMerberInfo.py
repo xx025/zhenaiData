@@ -5,12 +5,12 @@ from time import sleep, time
 from bs4 import BeautifulSoup
 
 from connectMysql import MySQLJDBC
-from zhenaiGetData import Tools
+from zhenaiGetData import toolsMy
 
 msql = MySQLJDBC.msql
-headers = Tools.headers
+headers = toolsMy.headers
 
-get_one_page = Tools.get_one_page
+get_one_page = toolsMy.get_one_page
 
 
 def insertDatabase(dict_):
