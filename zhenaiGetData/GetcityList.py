@@ -1,13 +1,18 @@
 '''
 获取城市页面并将城市和对应的链接写入数据库
 '''
+
 from bs4 import BeautifulSoup
+
 from connectMysql import MySQLJDBC
 from zhenaiGetData import toolsMy
+
 url = 'http://www.zhenai.com/zhenghun'
+
 msql = MySQLJDBC.msql
 get_one_page = toolsMy.get_one_page
 headers = toolsMy.headers
+
 if __name__ == '__main__':
     # 城市列表页面
     html = get_one_page(url, headers)  # 获取页面
